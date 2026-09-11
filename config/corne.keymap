@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "behaviors.dtsi"
 
 #define HYPER LG(LC(LA(LSHIFT)))
 #define CPY &kp LGUI(C)
