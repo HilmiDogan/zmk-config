@@ -1,0 +1,144 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    macros {
+        tr_i: tr_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N1>,
+                <&macro_tap &kp N3>,
+                <&macro_tap &kp N1>,
+                <&macro_release &kp LALT>;
+        };
+        tr_i_cap: tr_i_cap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N1>,
+                <&macro_tap &kp N3>,
+                <&macro_tap &kp N0>,
+                <&macro_release &kp LALT>;
+        };
+
+        tr_s: tr_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N1>,
+                <&macro_tap &kp N5>,
+                <&macro_tap &kp F>,
+                <&macro_release &kp LALT>;
+        };
+        tr_s_cap: tr_s_cap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N1>,
+                <&macro_tap &kp N5>,
+                <&macro_tap &kp E>,
+                <&macro_release &kp LALT>;
+        };
+
+        tr_g: tr_g {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N1>,
+                <&macro_tap &kp N1>,
+                <&macro_tap &kp F>,
+                <&macro_release &kp LALT>;
+        };
+        tr_g_cap: tr_g_cap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N1>,
+                <&macro_tap &kp N1>,
+                <&macro_tap &kp E>,
+                <&macro_release &kp LALT>;
+        };
+
+        tr_c: tr_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp E>,
+                <&macro_tap &kp N7>,
+                <&macro_release &kp LALT>;
+        };
+        tr_c_cap: tr_c_cap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp C>,
+                <&macro_tap &kp N7>,
+                <&macro_release &kp LALT>;
+        };
+
+        tr_o: tr_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp F>,
+                <&macro_tap &kp N6>,
+                <&macro_release &kp LALT>;
+        };
+        tr_o_cap: tr_o_cap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp D>,
+                <&macro_tap &kp N6>,
+                <&macro_release &kp LALT>;
+        };
+
+        tr_u: tr_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp F>,
+                <&macro_tap &kp C>,
+                <&macro_release &kp LALT>;
+        };
+        tr_u_cap: tr_u_cap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp N0>,
+                <&macro_tap &kp D>,
+                <&macro_tap &kp C>,
+                <&macro_release &kp LALT>;
+        };
+    };
+};
