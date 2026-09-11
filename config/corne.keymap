@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define HYPER LG(LC(LA(LSHIFT)))
-#define CPY &kp LGUI(C)
-#define PST &kp LGUI(V)
-#define CUT &kp LGUI(X)
+#define M_CPY &kp LGUI(C)
+#define M_PST &kp LGUI(V)
+#define M_CUT &kp LGUI(X)
 
 / {
     keymap {
@@ -19,10 +19,10 @@
 
         default_layer {
             bindings = <
-                &mt HYPER TAB    &kp B        &kp L       &kp D      &kp W      &kp Z       &kp SQT &kp F      &kp O      &kp U       &kp J        &kp BSPC
-                &kp LCTRL        &mt LSHFT N  &mt LCTRL R &mt LALT T &mt LGUI S &kp G       &kp Y   &mt RGUI H &mt RALT A &mt RCTRL E &mt RSHFT I  &kp FSLH
-                &mt LC(LALT) DEL &kp Q        &mt CUT X   &kp M      &mt CPY C  &mt PST V   &kp K   &kp P      &kp SEMI   &kp COMMA   &kp DOT      &mt 3 ESC
-                                                           &kp LGUI &mo 1 &mt LSHFT SPACE   &kp RET &mo 2  &kp RALT
+                &mt HYPER TAB    &kp B        &kp L       &kp D      &kp W       &kp Z         &kp SQT &kp F      &kp O      &kp U       &kp J        &kp BSPC
+                &kp LCTRL        &mt LSHFT N  &mt LCTRL R &mt LALT T &mt LGUI S  &kp G         &kp Y   &mt RGUI H &mt RALT A &mt RCTRL E &mt RSHFT I  &kp FSLH
+                &mt LC(LALT) DEL &kp Q        &mt M_CUT X &kp M      &mt M_CPY C &mt M_PST V   &kp K   &kp P      &kp SEMI   &kp COMMA   &kp DOT      &mt 3 ESC
+                                                              &kp LGUI &mo 1 &mt LSHFT SPACE   &kp RET &mo 2  &kp RALT
             >;
         };
 
