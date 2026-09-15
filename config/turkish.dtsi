@@ -1,0 +1,177 @@
+/*
+ * Turkish-specific characters for macOS.
+ *
+ * These characters (ç ğ ı ö ş ü and their uppercase forms) are not
+ * standard HID keycodes, so they are sent as raw Unicode code points
+ * using macOS's built-in "Unicode Hex Input" method: hold Option
+ * (Left Alt) and type the 4-digit hex code point.
+ *
+ * One-time setup required on the Mac:
+ *   System Settings > Keyboard > Input Sources (or Text Input) >
+ *   click "+" > add "Unicode Hex Input" > select it from the input
+ *   menu (or make it your only/active source).
+ *
+ * Normal typing is unaffected once it's selected - it only kicks in
+ * when Option is held. If nothing shows up when using these keys,
+ * this input source most likely isn't the active one.
+ */
+
+/ {
+    macros {
+        tr_c_lower: tr_c_lower {
+            // ç - U+00E7
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N0 &kp E &kp N7>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_c_upper: tr_c_upper {
+            // Ç - U+00C7
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N0 &kp C &kp N7>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_g_lower: tr_g_lower {
+            // ğ - U+011F
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N1 &kp N1 &kp F>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_g_upper: tr_g_upper {
+            // Ğ - U+011E
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N1 &kp N1 &kp E>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_i_lower: tr_i_lower {
+            // ı - dotless i - U+0131
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N1 &kp N3 &kp N1>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_i_upper: tr_i_upper {
+            // İ - dotted capital I - U+0130
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N1 &kp N3 &kp N0>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_o_lower: tr_o_lower {
+            // ö - U+00F6
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N0 &kp F &kp N6>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_o_upper: tr_o_upper {
+            // Ö - U+00D6
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N0 &kp D &kp N6>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_s_lower: tr_s_lower {
+            // ş - U+015F
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N1 &kp N5 &kp F>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_s_upper: tr_s_upper {
+            // Ş - U+015E
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N1 &kp N5 &kp E>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_u_lower: tr_u_lower {
+            // ü - U+00FC
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N0 &kp F &kp C>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_u_upper: tr_u_upper {
+            // Ü - U+00DC
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N0 &kp D &kp C>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+};
