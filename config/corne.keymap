@@ -51,9 +51,9 @@
         default_layer {
             bindings = <
                 &mt HYPER TAB          &kp B        &kp L        &kp D       &kp W       &kp Z                    &kp SQT &kp F       &kp O       &kp U        &kp J        &kp BSPC
-                &mt LA(LSHFT) LA(BSPC) &hml LSHFT N &hml LCTRL R &hml LALT T &hml LGUI S &kp G                    &kp Y   &hmr RGUI H &hmr RALT A &hmr RCTRL E &hmr RSHFT I &kp FSLH
+                &mt LG(LSHFT) LA(BSPC) &hml LSHFT N &hml LCTRL R &hml LALT T &hml LGUI S &kp G                    &kp Y   &hmr RGUI H &hmr RALT A &hmr RCTRL E &hmr RSHFT I &kp FSLH
                 &mt LC(LALT) DEL       &kp Q        &kp X        &kp M       &kp C       &kp V                    &kp K   &kp P       &kp SEMI    &kp COMMA    &kp DOT      &lt 4 GLOBE
-                                                                 &lt 3 CAPS  &mo 1       &mt LG(LSHFT) SPACE      &kp RET &mo 2       &kp ESC
+                                                                 &lt 3 K_APP &mo 1       &mt SPACE                &kp RET &mo 2       &kp ESC
             >;
         };
 
