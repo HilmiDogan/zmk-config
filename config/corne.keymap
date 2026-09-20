@@ -50,9 +50,9 @@
 
         default_layer {
             bindings = <
-                &mt HYPER TAB          &kp B        &kp L        &kp D       &kp W       &kp Z                    &kp SQT &kp F       &kp O       &kp U        &kp J        &kp BSPC
+                &mt HYPER TAB          &kp B        &kp L        &kp D       &kp W       &kp Z                    &kp J   &kp F       &kp O       &kp U        &kp SQT      &kp BSPC
                 &mt LG(LSHFT) LA(BSPC) &hml LSHFT N &hml LCTRL R &hml LALT T &hml LGUI S &kp G                    &kp Y   &hmr RGUI H &hmr RALT A &hmr RCTRL E &hmr RSHFT I &kp FSLH
-                &mt LC(LALT) DEL       &kp Q        &kp X        &kp M       &kp C       &kp V                    &kp K   &kp P       &kp SEMI    &kp COMMA    &kp DOT      &lt 4 GLOBE
+                &mt LC(LALT) DEL       &kp Q        &kp X        &kp M       &kp C       &kp V                    &kp K   &kp P       &kp SEMI    &kp COMMA    &kp DOT      &mo 4
                                                                  &lt 3 K_APP &mo 1       &kp SPACE                &kp RET &mo 2       &kp ESC
             >;
         };
@@ -86,10 +86,10 @@
 
         turkish_l_layer {
             bindings = <
-                &trans &trans &trans &trans &trans      &trans          &trans &trans &tr_o_lower &tr_u_lower &trans      &trans
-                &trans &trans &trans &trans &tr_s_lower &tr_g_lower     &trans &trans &trans      &trans      &tr_i_lower &mo 5
-                &trans &trans &trans &trans &tr_c_lower &trans          &trans &trans &trans      &trans      &trans      &trans
-                                &trans      &trans      &trans          &trans &trans &trans
+                &trans &trans &trans &dragin   &trans      &trans          &trans &salesforce &tr_o_lower &tr_u_lower &trans      &trans
+                &trans &trans &trans &tr_lira  &tr_s_lower &tr_g_lower     &trans &tr_hocam   &trans      &tr_engin   &tr_i_lower &mo 5
+                &trans &trans &trans &tr_merve &tr_c_lower &trans          &trans &trans      &trans      &trans      &trans      &trans
+                                   &trans      &trans      &trans          &trans &trans &trans
             >;
         };
 

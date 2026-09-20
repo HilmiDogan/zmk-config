@@ -173,5 +173,84 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+
+        tr_lira: tr_lira {
+            // TL - U+20BA
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp N2 &kp N0 &kp B &kp A>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        tr_hocam: tr_hocam {
+            // hocam
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_tap &kp H &kp O &kp C &kp A &kp M>;
+        };
+
+        tr_engin: tr_engin {
+            // Engin
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp E>
+                , <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp N &kp G &kp I &kp N>
+                ;
+        };
+
+        tr_merve: tr_merve {
+            // Merve
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp M>
+                , <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp E &kp R &kp V &kp E>
+                ;
+        };
+
+        salesforce: salesforce {
+            // Salesforce
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp S>
+                , <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp A &kp L &kp E &kp S &kp F &kp O &kp R &kp C &kp E>
+                ;
+        };
+
+        dragin: dragin {
+            // Dragin
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp D>
+                , <&macro_release &kp LSHIFT>
+                , <&macro_tap &kp R &kp A &kp G &kp I &kp N>
+                ;
+        };
     };
 };
