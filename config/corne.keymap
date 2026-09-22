@@ -86,9 +86,9 @@
 
         turkish_l_layer {
             bindings = <
-                &trans &trans &trans &dragin   &trans      &trans          &trans &salesforce &tr_o_lower &tr_u_lower &trans      &trans
-                &trans &trans &trans &tr_lira  &tr_s_lower &tr_g_lower     &trans &tr_hocam   &trans      &tr_engin   &tr_i_lower &mo 5
-                &trans &trans &trans &tr_merve &tr_c_lower &trans          &trans &trans      &trans      &trans      &trans      &trans
+                &trans   &trans &trans &dragin   &trans      &trans          &trans &salesforce &tr_o_lower &tr_u_lower &trans      &trans
+                &trans   &trans &trans &tr_lira  &tr_s_lower &tr_g_lower     &trans &hocam      &trans      &trans      &tr_i_lower &mo 5
+                &kp CAPS &trans &trans &trans    &tr_c_lower &trans          &trans &trans      &trans      &trans      &trans      &trans
                                    &trans      &trans      &trans          &trans &trans &trans
             >;
         };
