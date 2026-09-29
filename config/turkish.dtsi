@@ -223,8 +223,16 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings
-                = 
-                <&macro_tap &kp T &kp E &tr_s_lower &kp E &kp K &kp K &tr_u_lower &kp R>
+                =
+                <&macro_tap &kp T &kp E>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N1 &kp N5 &kp F>
+                , <&macro_release &kp LALT>
+                , <&kp E &kp K &kp K>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp N0 &kp N0 &kp F &kp C>
+                , <&macro_release &kp LALT>
+                , <&kp R>
                 ;
         };
 
