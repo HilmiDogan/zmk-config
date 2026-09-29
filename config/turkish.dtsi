@@ -193,8 +193,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_tap &kp H &kp O &kp C &kp A &kp M>;
+            bindings = <&macro_tap &kp H &kp O &kp C &kp A &kp M>;
         };
 
         salesforce: salesforce {
@@ -204,10 +203,8 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings
-                = <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp S>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp A &kp L &kp E &kp S &kp F &kp O &kp R &kp C &kp E>
+                = 
+                <&macro_tap &kp LS(S) &kp A &kp L &kp E &kp S &kp F &kp O &kp R &kp C &kp E>
                 ;
         };
 
@@ -217,11 +214,28 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
+            bindings = <&macro_tap &kp LS(D) &kp R &kp A &kp G &kp I &kp N>;
+        };
+
+        tesekkur: tesekkur {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings
-                = <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp D>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp R &kp A &kp G &kp I &kp N>
+                = 
+                <&macro_tap &kp T &kp E &tr_s_lower &kp E &kp K &kp K &tr_u_lower &kp R>
+                ;
+        };
+
+        email : email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = 
+                <&macro_tap &kp H &kp I &kp L &kp M &kp I &kp LS(N2) &kp D &kp R &kp A &kp G &kp I &kp N>
                 ;
         };
     };
