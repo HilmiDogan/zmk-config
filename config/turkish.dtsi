@@ -241,7 +241,7 @@
             bindings
                 =
                 <&macro_tap &kp H &kp I &kp L &kp M &kp I &kp LS(N2)>
-                , <&kp D &kp R &kp A &kp G &kp I &kp N &kp DOT &kp I kp O>
+                , <&kp D &kp R &kp A &kp G &kp I &kp N &kp DOT &kp I &kp O>
                 ;
         };
     };
