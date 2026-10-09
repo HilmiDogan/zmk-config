@@ -30,7 +30,6 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-
         tr_c_upper: tr_c_upper {
             // Ç - U+00C7
             compatible = "zmk,behavior-macro";
@@ -56,7 +55,6 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-
         tr_g_upper: tr_g_upper {
             // Ğ - U+011E
             compatible = "zmk,behavior-macro";
@@ -82,7 +80,6 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-
         tr_i_upper: tr_i_upper {
             // İ - dotted capital I - U+0130
             compatible = "zmk,behavior-macro";
@@ -108,7 +105,6 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-
         tr_o_upper: tr_o_upper {
             // Ö - U+00D6
             compatible = "zmk,behavior-macro";
@@ -134,7 +130,6 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-
         tr_s_upper: tr_s_upper {
             // Ş - U+015E
             compatible = "zmk,behavior-macro";
@@ -160,7 +155,6 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-
         tr_u_upper: tr_u_upper {
             // Ü - U+00DC
             compatible = "zmk,behavior-macro";
@@ -174,6 +168,7 @@
                 ;
         };
 
+        // MACROS
         tr_lira: tr_lira {
             // TL - U+20BA
             compatible = "zmk,behavior-macro";
@@ -214,25 +209,6 @@
             bindings = <&macro_tap &kp LS(D) &kp R &kp A &kp G &kp I &kp N>;
         };
 
-        tesekkur: tesekkur {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                =
-                <&macro_tap &kp T &kp E>
-                , <&macro_press &kp LALT>
-                , <&macro_tap &kp N0 &kp N1 &kp N5 &kp F>
-                , <&macro_release &kp LALT>
-                , <&kp E &kp K &kp K>
-                , <&macro_press &kp LALT>
-                , <&macro_tap &kp N0 &kp N0 &kp F &kp C>
-                , <&macro_release &kp LALT>
-                , <&kp R>
-                ;
-        };
-
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -244,5 +220,37 @@
                 , <&kp D &kp R &kp A &kp G &kp I &kp N &kp DOT &kp I &kp O>
                 ;
         };
+
+        regards: regards {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                =
+                <&macro_tap &kp LS(B) &kp E &kp S &kp T &kp SPACE>
+                , <&kp LS(R) &kp E &kp G &kp A &kp R &kp D &kp S>
+                ;
+        };
+
+        thank: thank {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <30>;
+          tap-ms = <30>;
+          bindings =
+            <&macro_tap &kp LS(T) &kp H &kp A &kp N &kp K>
+            , <&kp SPACE &kp Y &kp O &kp U>;
+        };
+
+        pass: pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_tap &kp N1 &kp N1 &kp N2 &kp N3 &kp RET>;
+        };
+
+
     };
 };
