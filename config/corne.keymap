@@ -17,6 +17,23 @@
 #define THUMBS 36 37 38 39 40 41
 
 / {
+    macros {
+        // Cmd + <key> as a single press and release. Used as the hold action of
+        // the clip behavior so a held key fires the shortcut exactly once.
+        cmd_once: cmd_once {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <0>;
+            tap-ms = <20>;
+            bindings
+                = <&macro_param_1to1>
+                , <&macro_press &kp LGUI>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+    };
+
     behaviors {
         // Left hand home row mods (triggered by right hand keys)
         hml: home_row_mod_left {
@@ -31,7 +48,7 @@
             hold-trigger-on-release;
         };
 
-        // Clipboard keys: tap = plain letter, hold = Cmd + letter.
+        // Clipboard keys: tap = plain letter, hold = Cmd + letter, fired once per hold.
         // tap-preferred means any other key pressed while this one is
         // undecided turns it into a tap, so rolls and fast typing never
         // trigger a shortcut. require-prior-idle-ms makes it resolve as a
@@ -43,7 +60,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&cmd_once>, <&kp>;
         };
 
         // Right hand home row mods (triggered by left hand keys)
@@ -65,10 +82,10 @@
 
         default_layer {
             bindings = <
-                &mt HYPER TAB          &kp B        &kp L         &kp D       &clip LG(W) W &clip LG(Z) Z     &kp J   &kp F       &kp O       &kp U        &kp SQT      &kp BSPC
-                &mt LG(LSHFT) LA(BSPC) &hml LSHFT N &hml LCTRL R  &hml LALT T &hml LGUI S   &kp G             &kp Y   &hmr RGUI H &hmr RALT A &hmr RCTRL E &hmr RSHFT I &kp FSLH
-                &mt LC(LALT) DEL       &kp Q        &clip LG(X) X &kp M       &clip LG(C) C &clip LG(V) V     &kp K   &kp P       &kp SEMI    &kp COMMA    &kp DOT      &kp ESC
-                                                                  &lt 3 K_APP &mo 1         &kp SPACE         &kp RET &mo 2       &mo 4
+                &mt HYPER TAB          &kp B        &kp L        &kp D       &kp W       &clip Z Z                    &kp J   &kp F       &kp O       &kp U        &kp SQT      &kp BSPC
+                &mt LG(LSHFT) LA(BSPC) &hml LSHFT N &hml LCTRL R &hml LALT T &hml LGUI S &kp G                    &kp Y   &hmr RGUI H &hmr RALT A &hmr RCTRL E &hmr RSHFT I &kp FSLH
+                &mt LC(LALT) DEL       &kp Q        &clip X X        &kp M       &clip C C       &clip V V                    &kp K   &kp P       &kp SEMI    &kp COMMA    &kp DOT      &kp ESC
+                                                                 &lt 3 K_APP &mo 1       &kp SPACE                &kp RET &mo 2       &mo 4
             >;
         };
 
