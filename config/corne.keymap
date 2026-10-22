@@ -118,19 +118,19 @@
 
         turkish_l_layer {
             bindings = <
-                &trans   &trans &tr_lira &dragin   &trans      &trans          &trans &salesforce &tr_o_lower &tr_u_lower &trans      &trans
-                &trans   &trans &regards &trans    &tr_s_lower &tr_g_lower     &trans &hocam      &trans      &email      &tr_i_lower &trans
-                &trans   &trans &trans   &trans    &tr_c_lower &trans          &trans &pass       &trans      &trans      &trans      &trans
-                                         &mo 5     &trans      &trans          &trans &trans &trans
+                &trans &trans &trans &trans &trans      &trans          &trans &trans &tr_o_lower &tr_u_lower &trans      &trans
+                &trans &trans &trans &trans &tr_s_lower &tr_g_lower     &trans &trans &trans      &trans      &tr_i_lower &trans
+                &trans &trans &trans &trans &tr_c_lower &trans          &trans &trans &trans      &trans      &trans      &trans
+                                     &mo 5  &trans      &trans          &trans &trans &trans
             >;
         };
 
         turkish_u_layer {
             bindings = <
-                &trans &trans &trans &trans &trans      &trans          &trans &trans &tr_o_upper &tr_u_upper &trans      &trans
-                &trans &trans &trans &trans &tr_s_upper &tr_g_upper     &trans &trans &trans      &trans      &tr_i_upper &trans
-                &trans &trans &trans &trans &tr_c_upper &trans          &trans &trans &trans      &trans      &trans      &trans
-                                &trans      &trans      &trans          &trans &trans &trans
+                &regards &trans &tr_lira &dragin &trans      &trans          &trans &salesforce &tr_o_upper &tr_u_upper &trans      &trans
+                &trans   &trans &trans   &trans  &tr_s_upper &tr_g_upper     &trans &hocam      &trans      &email      &tr_i_upper &trans
+                &trans   &trans &trans   &trans  &tr_c_upper &trans          &trans &pass       &trans      &trans      &trans      &trans
+                                               &trans &trans &trans          &trans &trans &trans
             >;
         };
 
